@@ -5,20 +5,24 @@
     box-sizing: border-box;
   }
   .wrapper {
-    width: 375px;
+    min-width: 375px;
+    max-width: 1070px;
     margin: auto;
     overflow: hidden;
   }
   .items_list {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
   }
   .item {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 341px;
-    margin: auto;
-    margin-top: 30px;
+    margin: 30px 5px;
     padding-bottom: 20px;
     overflow: hidden;
     border: 0.3px solid #828282;
@@ -81,7 +85,8 @@
     padding-left: 25px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 15px;
+    margin-top: 15p2;
+        order: 1;
   }
   .title {
     font-family: "Open Sans Semibold";
@@ -95,11 +100,13 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
+        order: 2;
   }
   .shema {
     margin-left: 13px;
     margin-right: 10px;
     margin-top: 20px;
+        order: 2;
   }
   .shema_item {
     font-family: "Open Sans";
@@ -119,6 +126,7 @@
     margin-right: 10px;
     margin-top: 10px;
 
+        order: 2;
     display: flex;
     justify-content: space-between;
   }
@@ -146,6 +154,7 @@
     margin-right: 20px;
     margin-left: 10px;
     padding-top: 35px;
+        order: 2;
   }
   .price {
     width: 100px;
@@ -185,11 +194,11 @@
   }
 }
 
-/* 
+/*
 
 */
 
-@media screen and (min-width: 1070px) {
+@media screen and (min-width: 1440px) {
   .wrapper {
     width: 1440px;
   }
@@ -214,6 +223,11 @@
     width: 100%;
     height: 100%;
   }
+  .container {
+    display: flex;
+    flex-direction: column;
+
+  }
   .duration {
     height: 23px;
     font-family: "Open Sans";
@@ -227,6 +241,7 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 15px;
+    order:2;
   }
   .title {
     font-family: "Open Sans Semibold";
@@ -234,7 +249,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
-
+    order: 1;
     color: #404040;
     margin-left: 10px;
     margin-right: 10px;
@@ -244,6 +259,7 @@
     margin-left: 13px;
     margin-right: 10px;
     margin-top: 20px;
+    order:2;
   }
   .shema_item {
     font-family: "Open Sans";
@@ -262,6 +278,7 @@
     margin-right: 10px;
     margin-top: 10px;
 
+    order:2;
     display: flex;
     justify-content: space-between;
   }
@@ -288,6 +305,7 @@
     margin-right: 20px;
     margin-left: 10px;
     padding-top: 35px;
+    order:2;
   }
   .price {
     width: 100px;
